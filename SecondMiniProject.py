@@ -1,18 +1,19 @@
 import random as r
-x=int(input("enter a number: "))
-randomint=r.randint(1,100)
-if x < randomint:
-    print("Too low")
-elif x > randomint:
-    print("Too high")
-else:
-    print('yes')
-while x!=randomint:
-    x=int(input("enter a number: "))
+
+def guessthenumber(x,randomint):
     if x < randomint:
-        print("Too low")
+        return("Too low")
     elif x > randomint:
-        print("Too high")
-    else:
-        print('yes')
+        return("Too high")  
+
+x=int(input("enter a number: "))
+randomint=r.randint(1,10)
+while x!=randomint:
+    print(guessthenumber(x,randomint))
+    x=int(input("enter a number: "))
+else:
+    print("You have guessed the number!")
+
+
+    
 
