@@ -23,17 +23,26 @@ def confirmation():
         print("Invalid Response! Try Again.")
         return(confirmation())
 
+def isitnumber(pin):
+    try:
+        int(pin)
+        correctornot(pin)
+    except ValueError:
+        while ValueError:
+            wrongpin2=input("Wrong pin! Enter NUMERICAL characters only: ")
+            isitnumber(pin=wrongpin2)
+        else:
+            pass
+
+def correctornot(pin):
+    if pin==1234:
+        options()
+    if pin!=1234:
+        wrongpin=input("Wrong pin! Enter again: ")
+        isitnumber(pin=wrongpin)
+
+
 
 print("ATM MACHINE: Good Day!")
-pin=int(input("Enter your pin: "))
-while str(pin):
-    pinagain=input("Invalid Pin! Numeric numbers only. :")
-while pin or pinagain != 1234 :
-    pin=int(input("Invalid! Enter your pin again: "))
-if pin == 1234:
-    print(options())
-    while True:
-        if confirmation() == None:
-            break
-        print(confirmation())
-        
+pin=input("Enter your pin: ")
+print(isitnumber(pin))
