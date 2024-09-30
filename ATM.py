@@ -25,7 +25,7 @@ def confirmation():
 
 def isitnumber(pin):
     try:
-        int(pin)
+        pin=int(pin)
         correctornot(pin)
     except ValueError:
         while ValueError:
