@@ -1,7 +1,9 @@
+import time as t
+import sys as s
 
-name = " "
-
-while len(name)==0:
-    name = input("What is your name?:")
-
-#print("Your name is: " + name)
+name="Vinsssss"
+for char in name:
+    t.sleep(0.3)
+    s.stdout.write(char)
+    s.stdout.flush()
+print(char)
