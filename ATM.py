@@ -37,6 +37,7 @@ def isitnumber(pin):
 def correctornot(pin):
     if pin==1234:
         options()
+        confirmation()
     if pin!=1234:
         wrongpin=input("Wrong pin! Enter again: ")
         isitnumber(pin=wrongpin)
