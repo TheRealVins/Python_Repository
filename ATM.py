@@ -1,3 +1,5 @@
+import sys as s
+
 def isitnumber(pin):
     try:
         pin=int(pin)
@@ -36,8 +38,8 @@ def confirmation():
         print(options())
         print(confirmation())
     elif another.lower()=="n":
-        return("Thank you for using my program!")
-        # endprogram()
+        print("Thank you for using my program!")
+        s.exit()
     else:
         print("Invalid Response! Try Again.")
         return(confirmation())
