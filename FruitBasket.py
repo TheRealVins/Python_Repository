@@ -22,7 +22,7 @@ def eat1():
     eat=str(input("Press E to eat a fruit. "))
     while eat == "e" or eat == "E":
         if len(basket)==1:
-            print("Takaw mo namam! ")
+            print("Takaw mo naman! ")
             s.exit()
         basket.pop(-1)
         eat1()
