@@ -46,7 +46,11 @@ def confirmation():
     else:
         print("Invalid Response! Try Again.")
         return(confirmation())
+
+def withdrawal():
+    withdrawamount=int(input("Enter the amount you want to withdraw: "))
+    
     
 print("ATM MACHINE: Good Day!\n===================================")
-pin=input("Enter your pin: ")
+pin=input("\x1B[3mEnter your pin:\x1B[0m ")
 print(isitnumber(pin))

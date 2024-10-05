@@ -24,7 +24,7 @@ def printingofmovies():
     eating(eat)
 
 def eating(eat):
-    while eat=='s' or eat=='S':
+    while eat.lower()=="s":
         if len(snackslist)==1:
             print("No more snacks.")
             s.exit()
