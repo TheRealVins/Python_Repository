@@ -4,7 +4,10 @@ month=str(input("When is the month of your birth?: "))
 day=int(input("When is the day of your birth?: "))
 
 if month == 'April':
-    astro = 'Aries' if (day < 20) else 'Taurus' 
+    if (day < 20):
+        astro = 'Aries' 
+    else:
+        astro= 'Taurus' 
 elif month == 'May':
     astro = 'Taurus' if (day < 21) else 'Gemini'
 elif month == 'June':
