@@ -6,6 +6,6 @@ if x<=0:
     print("Error")
 while x>f0: 
     print(f0)
-    f=f0+f1
     f0=f1
     f1=f
+    f=f0+f1
