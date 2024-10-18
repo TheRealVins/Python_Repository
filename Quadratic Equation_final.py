@@ -4,9 +4,8 @@ import sys as s
 #for checking; if the user inputted string or integer
 def numberchecker(num):
     try:
-        if True:
-            num=int(num)
-            pass
+        num=int(num)
+        pass
     except ValueError:
         userinputneeded()
 
