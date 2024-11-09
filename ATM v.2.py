@@ -78,7 +78,7 @@ def choices_conditions(number):
                 updated_balance=user_balance+deposit_amount
                 user_balance=updated_balance
                 print(f"Remaining Balance: {user_balance}")
-                else: pass
+            else: pass
         checking_deposit()     
 
 
