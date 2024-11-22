@@ -108,7 +108,10 @@ def confirmation():
 paragraph=str(input("Enter the paragraph here:")).lower() #Asks the user for the paragraph
 choices()
 
+
+
+
 #  Members: 
 #  Urrutia, Divino Samuel I.
 #
-#  
+#  https://github.com/TheRealVins/Python_Repository/blob/main/Activity%207.py
