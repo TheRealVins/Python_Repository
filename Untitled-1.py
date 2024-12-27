@@ -1,7 +1,13 @@
-import re
+import re 
 
-str= "string integer float"
-repl="function"
-str_to_be_replaced= "integer"
-x=re.sub(r'\b'+ re.escape(str_to_be_replaced) + r'\b', repl, str)
-print(x)
+punctuation="The cat chased the mouse? The mouse chased the dog?"
+exclamation="The cat chased the mouse! The mouse chased the dog!"
+dot="The cat chased the mouse. The mouse chased the dog."
+
+p= re.split(r'(?<=[.!?]) +', punctuation)
+e= re.split(r'(?<=[.!?]) +', exclamation)
+d= re.split(r'(?<=[.!?]) +', dot)
+
+print(p)
+print(e)
+print(d)
