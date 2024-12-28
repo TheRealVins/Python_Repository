@@ -63,7 +63,7 @@ def choice3(paragraph):
     capitalchoice=input("""--------------------\nInput '1' to capitalize the first letter of each sentence.
 Input '2' to capitalize all the words.\n--------------------
 Enter your choice here: """)
-    sentences = re.split(r'(?<=[.!?]) +', paragraph) #Splits the paragraph into sentences (Recognizes strings before the (?)(.)(!))
+    sentences = re.split(r'(?<=[.!?]) +', paragraph) #Splits the paragraph into sentences [Recognizes strings before the (?)(.)(!)]
     if capitalchoice == "1":
         sentences = [sentence.capitalize() for sentence in sentences] #Capitalizes the first letter of each sentence. 
         print(' '.join(sentences))
